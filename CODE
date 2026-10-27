@@ -1,0 +1,20 @@
+print("STUDENT BUDGET TRACKER")
+print("                      ")
+allowance=float(input("Enter your allowance:"))
+food=float(input("Enter food expenses:"))
+fare=float(input("Enter fare expenses:"))
+school=float(input("Enter school expenses:"))
+
+if allowance < 0 or food < 0 or fare < 0 or school < 0:
+    print("Invalid amount.")
+else:
+    total = food + fare + school
+    balance = allowance - total
+    print("                          ")
+    print("Total Expenses:", total)
+    print("Remaining Balance:", balance)
+    print("                           ")
+    if balance > 0:
+        print("You still have money left.")
+    else:
+        print("You don't have enough money.")
